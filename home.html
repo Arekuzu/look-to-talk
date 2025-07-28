@@ -1,0 +1,450 @@
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9G3K60LSE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H9G3K60LSE');
+</script>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+        <TITLE>Look to Talk</TITLE>
+        
+        <meta name="description" content="LookToTalk es una revolucionaria aplicación que utiliza tecnología de vanguardia para permitir a pacientes con dificultades de comunicación expresar sus necesidades.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ltt.medicinadigital.cl/">
+    <meta property="og:title" content="LookToTalk: Comunicación Aumentativa y Alternativa">
+    <meta property="og:description" content="«LookToTalk» es una revolucionaria aplicación que utiliza tecnología de vanguardia, incluyendo reconocimiento facial, eye tracking y speech-to-voice, para permitir a pacientes con dificultades de comunicación expresar sus necesidades.">
+    <meta property="og:image" content="https://enfermero.cl/images/eye-204_.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ltt.medicinadigital.cl/">
+    <meta property="twitter:title" content="LookToTalk: Comunicación Aumentativa y Alternativa">
+    <meta property="twitter:description" content="«LookToTalk» es una revolucionaria aplicación que utiliza tecnología de vanguardia, incluyendo reconocimiento facial, eye tracking y speech-to-voice, para permitir a pacientes con dificultades de comunicación expresar sus necesidades.">
+    <meta property="twitter:image" content="https://enfermero.cl/images/eye-204_.png">
+    
+    <!-- YouTube video link -->
+    <link rel="alternate" href="https://www.youtube.com/watch?v=3AZ_qDzW9ac" type="application/vnd.youtube.yt">
+    
+    
+        	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://ltt.medicinadigital.cl/img/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+<style>
+body {
+      padding-bottom: 56px; /* Altura de la barra inferior */
+      background: linear-gradient(to bottom, #2F5EC4, #3D79FC 50%);
+      min-width:100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff; /* Color de texto blanco para mayor contraste */
+      font-family: Arial, sans-serif;
+}
+button {
+    border-radius: 4px;
+}
+/* Video Feed Styling */
+#overlay {
+/* Video Feed Styling:
+ * Include the !important keyword to override default styles applied by JS.
+ * webgazer.js sets defaults for: display, position, top, left, width, height
+ */
+}
+#webgazerVideoContainer {
+    display: block !important; 
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 320px !important;
+    height: 240px !important;
+        z-index: -1;
+
+}
+
+/* Navbar styling */
+#webgazerNavbar {
+    left: 320px;
+    width: calc(100% - 320px);
+    z-index: 0;
+    box-shadow: 0px 3px 5px #ddd;
+    border:0px;
+    background-color: #fff;
+}
+
+#Accuracy a{
+    background-color: #222;
+    color: #eee;
+    left: -15px;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+#Accuracy {
+    background-color: #222;
+    padding-left: inherit;
+}
+
+li {
+    padding-left: 50px;
+}
+.navbar-right li {
+    padding-right: 20px;
+}
+
+.helpBtn {
+    display: inline-block;
+    padding: 15px;
+    border: none;
+    background: none;
+    color: #777;
+}
+.helpBtn:hover {
+    color: black!important;
+    text-decoration: none;
+}
+.modal-header {
+    border-bottom: none!important;
+}
+
+/* Calibration button styling */
+.Calibration{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: red;
+    opacity: 0.2;
+    border-color: black;
+    border-style: solid;
+    position:fixed;
+}
+
+/* Calibration point position */
+#Pt1{
+    top: 40px;
+    left: 10vw;
+}
+#Pt2{
+    top: 40px;
+    left:50vw;
+}
+#Pt3{
+    top: 40px;
+    right:10vw;
+}
+#Pt4{
+    top:50vh;
+    left:10vw;
+}
+#Pt5{
+    top: 50vh;
+    left: 50vw;
+}
+#Pt6{
+    top: 50vh;
+    right:10vw;
+}
+#Pt7{
+    bottom:70px;
+    left: 10vw;
+}
+#Pt8{
+    bottom:70px;
+    left:50vw;
+}
+#Pt9{
+    bottom:70px;
+    right:10vw;
+}
+
+.footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 56px; /* Altura de la barra inferior */
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            display: flex;
+        }
+        .footer button {
+            flex: 1;
+            border: none;
+            background: none;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer button i {
+            font-size: 24px;
+        }
+        .box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #ddd;
+        }
+        .box:last-child {
+            border-right: none;
+        }
+         #container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+
+    .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+
+.quadrant {
+    width: calc(33.33% - 10px); /* Cambia el ancho para que ocupen el 33.33% del contenedor */
+    height: 200px; /* Puedes ajustar la altura según tus necesidades */
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; /* Ajusta el margen según tu preferencia */
+}
+
+.quadrantfull {
+    width: calc(99.9% - 10px); /* Cambia el ancho para que ocupen el 33.33% del contenedor */
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; /* Ajusta el margen según tu preferencia */
+    z-index: -1;
+}
+#conf {
+  color: #2F5EC4;
+}
+     
+     
+     
+     
+     #card5 .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Alineados en la parte inferior */
+}
+
+#card5 .quadrant {
+    width: 30%; /* Ajuste para ocupar 30% del ancho */
+}
+
+#card5 #q4 {
+    width: 40%; /* Ajuste para que q4 ocupe más espacio */
+}
+
+</style>
+    </head>
+    <body>
+           <canvas id="plotting_canvas" width="100%" height="100%" style="cursor:crosshair;"></canvas>
+
+
+        <script src="img/sweetalert.min.js"></script>
+        <script src="img/main.js"></script>
+         <script src="img/cali.js"></script>
+         <script src="img/precision_calculation.js"></script>
+         <script src="img/precision_store_points.js"></script>
+
+       
+        <!-- Calibration points -->
+        <div class="calibrationDiv">
+            <input type="button" class="Calibration" id="Pt1"></input>
+            <input type="button" class="Calibration" id="Pt2"></input>
+            <input type="button" class="Calibration" id="Pt3"></input>
+            <input type="button" class="Calibration" id="Pt4"></input>
+            <input type="button" class="Calibration" id="Pt5"></input>
+            <input type="button" class="Calibration" id="Pt6"></input>
+            <input type="button" class="Calibration" id="Pt7"></input>
+            <input type="button" class="Calibration" id="Pt8"></input>
+            <input type="button" class="Calibration" id="Pt9"></input>
+        </div>
+
+        <!-- Modal -->
+        <div id="helpModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./img/prompt.png" width="100%" height="100%" alt="webgazer demo instructions"></img> </div>
+              <div class="modal-footer">
+                <button id="closeBtn" type="button" class="btn btn-default" data-bs-dismiss="modal">Cerrar </button>
+                <button type="button" id='start_calibration' class="btn btn-primary" data-bs-dismiss="modal" onclick="Restart()">Calibrar</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+<div id="container">
+    
+    
+        <div id="card1" class="card" style="display: block;">
+               <div class="quadrant" id="q1" messaje="Si"><div class="textquadrant"><b>SI</b> <br><img src="img/si.png" width="100"></div></div>
+               <div class="quadrant" id="q12" messaje="Tengo dolor" change="card2"><div class="textquadrant"><b>DOLOR</b><br><img src="img/cabeza.png" width="100"></div> </div>
+            <div class="quadrant" id="q2" messaje="No"><div class="textquadrant"><b>NO</b><br><img src="img/no.png" width="100"></div></div>
+
+
+            <div class="quadrant" id="q5" messaje="Tengo secreciones"><div class="textquadrant"><b>TENGO MOCOS</b> <br><img src="img/mocos.png" width="100"></div> </div>
+             <div class="quadrant" id="q6" messaje="Tengo sueño"><div class="textquadrant"><b>TENGO SUEÑO</b><br><img src="img/tuto.png" width="100"></div> </div>
+             <div class="quadrant" id="q1" messaje="Me falta el aire"><div class="textquadrant"><B>ME SIENTO AHOGADO</b><br><img src="img/ahogo.png" width="100"></div></div>
+             
+             
+             <div class="quadrant" id="q2" messaje="Tengo Frío"><div class="textquadrant"><b>TENGO FRIO</b> <br><img src="img/frio.png" width="100"></div></div>
+             <div class="quadrant" id="q5" messaje="Siento comezon"  change="card4"><div class="textquadrant"><b>INCOMODO</b><br><img src="img/incomodi.png" width="100"></div></div>
+             <div class="quadrant" id="q3" messaje="Tengo Calor"><div class="textquadrant"><b>TENGO CALOR</b><br><img src="img/calor.png" width="100"></div></div>
+             
+       
+             <div class="quadrant" id="q5" messaje="Estoy Bien" ><div class="textquadrant"><b>ESTOY BIEN</b> <br><img src="img/feliz.png" width="100"></div></div>
+             <div class="quadrant" id="q9" messaje="Estoy preocupado" change="card3"><div class="textquadrant"><b>ESTOY PREOCUPADO</b><br><img src="img/think.png" width="100"></div> </div>
+            <div class="quadrant" id="q6" messaje="Estoy triste"><div class="textquadrant"><b>ESTOY TRISTE</b> <br><img src="img/sad.png" width="100"></div></div>
+           
+        </div>
+        
+        
+        <div id="card2" class="card">
+            <div class="quadrant" id="q88" messaje=" " change="card1"><div class="textquadrant"><b>ATRÁS</b> <br><img src="img/green.png" width="100"></div></div>
+            <div class="quadrant" id="q87" messaje="Me duele el pecho"><div class="textquadrant"><b>ME DUELE EL PECHO</b> <br><img src="img/pecho.png" width="100"></div></div>
+             <div class="quadrant" id="q7" messaje="Me duele la cabeza"><div class="textquadrant"><b>ME DUELE LA CABEZA</b> <br><img src="img/cabeza.png" width="100"></div></div>
+             <div class="quadrant" id="q87" messaje="Me duele la guatita"><div class="textquadrant"><b>ME DUELE EL ESTOMAGO</b> <br><img src="img/guata.png" width="100"></div></div>
+            <div class="quadrant" id="q78" messaje="Me duele la espalda"><div class="textquadrant"><b>ME DUELE LA ESPALDA</b> <br><img src="img/espalda.png" width="100"></div></div>
+            <div class="quadrant" id="q86" messaje="Me duelen los genitales"><div class="textquadrant"><b>ME DUELEN LOS GENITALES </b> <br><img src="img/tula.png" width="100"></div></div>
+            <div class="quadrant" id="q6" messaje="Me duele el cuello"><div class="textquadrant"><b>ME DUELE EL CUELLO</b> <br><img src="img/cuello.png" width="100"></div></div>
+            <div class="quadrant" id="q75" messaje="Me duele la cola"><div class="textquadrant"><b>ME DUELE LA COLITA</b> <br><img src="img/sacro.png" width="100"></div></div>
+            <div class="quadrant" id="q85" messaje="Me duele el espinazo"><div class="textquadrant"><b>ME DUELE  LA ESPALDA</b> <br><img src="img/lumbar.png" width="100"></div></div>
+             <div class="quadrant" id="q87" messaje="Me duele el Hombro"><div class="textquadrant"><b>ME DUELE EL HOMBRO</b> <br><img src="img/hombro.png" width="100"></div></div>
+              <div class="quadrant" id="q77" messaje="Me duele el tobillo"><div class="textquadrant"><b>ME DUELE EL TOBILLO</b> <br><img src="img/tobillo.png" width="100"></div></div>
+             <div class="quadrant" id="q86" messaje=" " change="card5"><div class="textquadrant"><b>SELECCIONE AREA</b> <br><img src="img/body.png" width="100"></div></div>
+        </div>
+        
+        
+        <div id="card3" class="card">
+            <div class="quadrant" id="q12" messaje=" " change="card1"><div class="textquadrant"><b>ATRÁS</b> <br><img src="img/green.png" width="100"></div></div>
+            <div class="quadrant" id="q4" messaje="Quiero al doctor"><div class="textquadrant"><b>QUIERO UN DOCTOR</b> <br><img src="img/dostor.png" width="100"></div></div>
+            <div class="quadrant" id="q5" messaje="Quiero ir a casa"><div class="textquadrant"><b>QUIERO IR A CASA</b> <br><img src="img/casa.png" width="100"></div></div>
+            <div class="quadrant" id="q6" messaje="Quiero a mi familia"><div class="textquadrant"><b>QUIERO MI FAMILIA</b> <br><img src="img/family.png" width="100"></div></div>
+            <div class="quadrant" id="q7" messaje="Quiero a la enfermera"><div class="textquadrant"><b>QUIERO A LA ENFERMERA</b> <br><img src="img/nurse.png" width="100"></div></div>
+            <div class="quadrant" id="q8" messaje="Que dia es hoy"><div class="textquadrant"><b>QUE DIA ES HOY</b> <br><img src="img/fecha.png" width="100"></div></div>
+            <div class="quadrant" id="q9" messaje="¿Voy a mejorar?"><div class="textquadrant"><b>QUIERO INFORMACIÓN</b> <br><img src="img/health_.png" width="100"></div></div>
+            <div class="quadrant" id="q10" messaje="Quiero un pastor"><div class="textquadrant"><b>QUIERO UN SACERDOTE</b> <br><img src="img/cura.png" width="100"></div></div>
+             <div class="quadrant" id="q3" messaje="Quiero Morir"><div class="textquadrant"><b>QUIERO MORIR</b> <br><img src="img/wantdie.png" width="100"></div></div>
+        </div>
+        
+            <div id="card4" class="card">
+            <div class="quadrant" id="q12" messaje=" " change="card1"><div class="textquadrant"><b>ATRÁS</b> <br><img src="img/green.png" width="100"></div></div>
+            <div class="quadrant" id="q2" messaje="Estoy Cagao"><div class="textquadrant"><b>ESTOY SUCIO</b> <br><img src="img/poo.png" width="100"></div></div>
+            <div class="quadrant" id="q3" messaje="Estoy mojado"><div class="textquadrant"><b>ESTOY MOJADO</b> <br><img src="img/mojado.png" width="100"></div></div>
+            <div class="quadrant" id="q8" messaje="Tengo Sed"><div class="textquadrant"><b>TENGO SED</b> <br><img src="img/agua.png" width="100"></div></div>
+            <div class="quadrant" id="q8" messaje="Siento Comezón" change="card5"><div class="textquadrant"><b>ME PICA</b> <br><img src="img/pica.png" width="100"></div></div>
+            <div class="quadrant" id="q4" messaje="Tengo Hambre"><div class="textquadrant"><b>TENGO HAMBRE</b> <br><img src="img/hambre.png" width="100"></div> </div> 
+            <div class="quadrant" id="q10" messaje="Quiero escuchar musica"><div class="textquadrant"><b>QUIERO OIR MÚSICA</b> <br><img src="img/music.png" width="100"></div></div>
+            <div class="quadrant" id="q11" messaje="Estoy Incomodo"><div class="textquadrant"><b>ESTOY INCÓMODO</b> <br><img src="img/inco2.png" width="100"></div></div>
+           <div class="quadrant" id="q1" messaje="Quiero ver TV"><div class="textquadrant"><b>QUIERO VER TV</b> <br><img src="img/tv.png" width="100"></div></div>
+        </div>
+        
+<div id="card5" class="card">
+    <div class="row">
+        <div class="quadrant" id="q1" messaje="" change="card1"><div class="textquadrant" style="width: 33%; z-index: 20"><b>ATRÁS</b><br><br><img src="img/green.png" width="100"></div></div>
+    </div>
+    
+    <div class="row">
+    <div class="quadrantfull" id="q2" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;"><img src="img/body.png" style="height: 100%; width: auto;"></div>
+
+    </div>
+
+    <!-- Tercera fila para los cuadrantes en la parte inferior -->
+    <div class="row" style="display: flex; justify-content: space-between;">
+        <div class="quadrant" id="q3" messaje="Si" style="width: 33%; z-index: 20"><b>SI</b> <br><img src="img/si.png" width="100"></div>
+        <div class="quadrant" id="q4" messaje=" " style="width: 30%;"></div>
+        <div class="quadrant" id="q5" messaje="No" style="width: 33%; z-index: 30"><b>NO</b> <br><img src="img/no.png" width="100"></div>
+    </div>
+</div>
+        
+        </div>
+    
+
+
+
+
+
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://webgazer.cs.brown.edu/js/resize_canvas.js"></script>
+        <script src="https://webgazer.cs.brown.edu/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <div class="footer">
+        <div class="box">
+            <span id="Accuracy"><b><a>No Calibrado</a></b></span>
+        </div>
+        
+             <!-- <div class="box"> <button id="refresh" type="button" onclick="muted();"><i class="fa fa-volume-off" aria-hidden="true"></i></button> </div> -->
+        
+        <div class="box">
+            <button id="setup" type="button" onclick="Restart()"><i class="fa fa-cog" aria-hidden="true"></i></button>
+           <!-- <button id="stop" type="button" onclick="webgazer.applyKalmanFilter(!webgazer.params.applyKalmanFilter)"><i class="fa fa-waveform-path" aria-hidden="true"></i></button> -->
+        </div>
+        <div class="box">
+            <button id="refresh" type="button" onclick="showgrid();"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+            
+        </div>
+        <div class="box">
+        <button id="delete" type="button" onclick="helpModalShow();"><i class="fa fa-question-circle" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+
+
+
+ <script>
+function hidegrid() {
+    document.getElementById("container").style.display = "none";
+    var refreshButton = document.getElementById("refresh");
+    refreshButton.innerHTML = '<i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>';
+    refreshButton.onclick = showgrid;
+}
+
+function showgrid() {
+    document.getElementById("container").style.display = "block";
+    var refreshButton = document.getElementById("refresh");
+    refreshButton.innerHTML = '<i class="fa fa-eye fa-2x" aria-hidden="true"></i>';
+    refreshButton.onclick = hidegrid;
+}
+
+let speechSynthesisEnabled = true;
+
+</script>
+
+
+
+    </body>
+</html>

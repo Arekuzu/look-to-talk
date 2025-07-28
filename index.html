@@ -1,0 +1,157 @@
+
+
+<html>
+    <head>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+        <TITLE>Look to talk</TITLE>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="LookToTalk es una revolucionaria aplicación que utiliza tecnología de vanguardia para permitir a pacientes con dificultades de comunicación expresar sus necesidades.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://enfermero.cl/ltt/">
+    <meta property="og:title" content="LookToTalk: Comunicación Aumentativa y Alternativa">
+    <meta property="og:description" content="«LookToTalk» es una revolucionaria aplicación que utiliza tecnología de vanguardia, incluyendo reconocimiento facial, eye tracking y speech-to-voice, para permitir a pacientes con dificultades de comunicación expresar sus necesidades.">
+    <meta property="og:image" content="https://enfermero.cl/images/eye-204_.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://enfermero.cl/ltt/">
+    <meta property="twitter:title" content="LookToTalk: Comunicación Aumentativa y Alternativa">
+    <meta property="twitter:description" content="«LookToTalk» es una revolucionaria aplicación que utiliza tecnología de vanguardia, incluyendo reconocimiento facial, eye tracking y speech-to-voice, para permitir a pacientes con dificultades de comunicación expresar sus necesidades.">
+    <meta property="twitter:image" content="https://enfermero.cl/images/eye-204_.png">
+    
+    <!-- YouTube video link -->
+    <link rel="alternate" href="https://www.youtube.com/watch?v=3AZ_qDzW9ac" type="application/vnd.youtube.yt">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+        <link rel="manifest" href="./manifest.json" />
+        <link rel="stylesheet" href="./img/bootstrap.min.css">
+         <link rel="stylesheet" href="./img/install.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preload" href="./img/ltt.js" as="script">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9G3K60LSE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H9G3K60LSE');
+</script>
+    </head>
+    <body>
+
+  <div id="blockAA">Look to Talk </div>
+  <div id="blockL"><img src="img/splash.png">  </div>
+  <div id="blockA">Comunicación aumentativa y alternativa en la palma de tus manos.  </div>
+  <div id="install-banner"><button class="install-button"><i class="fa fa-download" aria-hidden="true"></i> Instalar</button></div>
+
+
+
+<div id="helpModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="hideHelp()">&times;</span>
+    <h3>Requisitos</h3>
+    <ul>
+    <li>Mantener tu rostro dentro del campo visual para que el reconocimiento facial pueda detectar correctamente el movimiento de tus ojos.</li>
+    <li>Mantener una buena iluminación frontal.</li><li>Evitar luces posteriores.</li>
+    <li>Usar un soporte para tu dispositivo Tablet o smartphone, para evitar vibraciones en la calibración.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="footer">
+          <div class="box"> </div>
+        <div class="box">  <a id="conf" href="home.html"><i class="fa fa-camera fa-2x"></i></a></div>
+         <div class="box"> <a id="conf" href="#" onclick="showHelp();"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></a></div>
+ </div>
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const installButton = document.querySelector(".install-button");
+    const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    // Verificar si la aplicación ya ha sido instalada
+    const appInstalled = localStorage.getItem("appInstalled");
+
+    if (isiOS) {
+        installButton.innerHTML = '<i class="fa fa-share" aria-hidden="true"></i> Iniciar';
+    } else if (appInstalled) {
+        // Si la aplicación está instalada, reemplazar el botón de instalación con un botón de inicio
+        installButton.innerHTML = '<i class="fa fa-camera" aria-hidden="true"></i> Comenzar';
+        installButton.addEventListener("click", function () {
+            // Redirigir a home.html al hacer clic en el botón de inicio
+            window.location.href = "home.html";
+        });
+    } else {
+        installButton.innerHTML = '<i class="fa fa-download" aria-hidden="true"></i> Instalar';
+    }
+});
+
+function showHelp() {
+    var modal = document.getElementById("helpModal");
+    modal.style.display = "block";
+}
+function hideHelp() {
+    var modal = document.getElementById("helpModal");
+    modal.style.display = "none";
+}
+
+let installEvent = null;
+let installButtons = document.querySelectorAll(".install-button");
+let installBanner = document.getElementById("install-banner");
+
+window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+        .then(registration => {
+            console.log("Service Worker is registered", registration);
+            // Agrega el código aquí para mostrar un mensaje o realizar otras acciones
+        })
+        .catch(err => {
+            console.error("Registration failed:", err);
+        });
+});
+
+window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    console.log("Ready to install...");
+    installEvent = e;
+    installBanner.style.display = "block"; // Mostrar el banner de instalación
+    // Puedes agregar el código aquí para mostrar un mensaje o realizar otras acciones
+});
+
+window.addEventListener("appinstalled", (e) => {
+    console.log("App installed successfully");
+
+    // Marcar la aplicación como instalada en localStorage
+    localStorage.setItem("appInstalled", true);
+
+    installBanner.style.display = "none"; // Ocultar el banner después de la instalación
+    window.location.href = "home.html";
+    
+    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+        window.location.href = "home.html";
+    }
+});
+
+if (installButtons) {
+    installButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            installEvent.prompt();
+        });
+    });
+}
+
+</script>
+</body>
+</html>
