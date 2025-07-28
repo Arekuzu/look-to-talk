@@ -1,0 +1,209 @@
+  body {
+      background: linear-gradient(to bottom, #2F5EC4, #3D79FC 50%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff; /* Color de texto blanco para mayor contraste */
+      font-family: Arial, sans-serif;
+    }
+
+
+
+
+
+
+ .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 56px; /* Altura de la barra inferior */
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            display: flex;
+        }
+.footer button {
+            flex: 1;
+            border: none;
+            background: none;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+.footer button i {
+            font-size: 24px;
+        }
+        .box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #ddd;
+        }
+.box:last-child {
+            border-right: none;
+        }
+
+    
+ /* Estilo para el banner de instalación */
+#install-banner{
+
+      position: absolute;
+      top: 610;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centra el bloque exactamente en el medio */
+      text-align: center; /* Alinea el texto al centro horizontalmente */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+    }
+
+#install-banner button {
+    background-color: #ffffff; /* Color de fondo blanco para el botón */
+    color: #000000; /* Color de texto verde similar a Google Play */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Agrega bordes redondeados con un radio de 10px */
+}
+
+#conf {
+  color: #2F5EC4;
+}
+
+#blockAA {
+  width: 80%;
+  max-width: 600px; /* Puedes ajustar este valor según tus preferencias */
+  margin: 0 auto; /* Centra el bloque horizontalmente */
+  padding: 5px;
+  background-color: #1253e1; /* Color de fondo azul */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombreado */
+  position: absolute;
+  /* Añade la unidad de medida  top: 55px;  (por ejemplo, píxeles) */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el bloque exactamente en el medio */
+  text-align: center; /* Alinea el texto al centro horizontalmente */
+    font-weight: bold; /* Establece el texto en negrita */
+}
+
+    #blockL {
+      width: 80%;
+      max-width: 600px; /* Puedes ajustar este valor según tus preferencias */
+      margin: 0 auto; /* Centra el bloque horizontalmente */
+      padding: 20px;
+      background-color: #000000; /* Color de fondo azul */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombreado */
+      position: absolute;
+
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centra el bloque exactamente en el medio */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } 
+    #blockA {
+      width: 80%;
+      max-width: 600px; /* Puedes ajustar este valor según tus preferencias */
+      margin: 0 auto; /* Centra el bloque horizontalmente */
+      padding: 20px;
+      background-color: #1253e1; /* Color de fondo azul */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombreado */
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centra el bloque exactamente en el medio */
+      text-align: center; /* Alinea el texto al centro horizontalmente */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }  
+    
+    /* Estilos para pantallas más pequeñas (como dispositivos móviles) */
+@media (max-width: 767px) {
+  img {
+    width: 90%; /* Ajusta el ancho al 100% en pantallas más pequeñas */
+
+  }
+    #blockAA {
+    top: 90px;
+  }
+  
+   #blockA {
+        top: 480;
+  }
+  
+      #blockL {
+           top: 270;
+  }
+}
+
+/* Estilos para pantallas más grandes (como PC o tabletas) en orientación horizontal (landscape) */
+@media (min-width: 768px) and (orientation: landscape) {
+  img {
+    width: 60%; /* Mantén el ancho al 60% en pantallas más grandes en orientación horizontal */
+
+  }
+      #blockAA {
+    top: 60px;
+  }
+        #blockA {
+        top: 510;
+  }
+        #blockL {
+           top: 280;
+  }
+
+}
+    
+    /* Estilo para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content h3,
+
+.modal-content ul li {
+  color: black; /* Color del texto dentro de las etiquetas <li> */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,267 @@
+ #button-container {
+        background-color: #fff; /* Color de fondo del contenedor */
+        border: 1px solid #000; /* Borde del contenedor */
+        position: fixed;
+        right: 0;
+        top: 80%;
+        transform: translateY(-50%);
+        z-index: 999; /* Para que esté por encima del contenido */
+      }
+
+      #button-audio-ws {
+        padding: 5px; /* Ajusta el relleno según tus preferencias */
+        text-align: center;
+      }
+
+      /* Agrega estilos adicionales según tus preferencias */
+      #audio-state {
+        font-weight: bold;
+      }
+      
+      
+body {
+      padding-bottom: 56px; /* Altura de la barra inferior */
+      background: linear-gradient(to bottom, #2F5EC4, #3D79FC 50%);
+      min-width:100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff; /* Color de texto blanco para mayor contraste */
+      font-family: Arial, sans-serif;
+}
+
+button {
+    border-radius: 4px;
+}
+
+/* Video Feed Styling */
+#overlay {
+/* Video Feed Styling:
+ * Include the !important keyword to override default styles applied by JS.
+ * webgazer.js sets defaults for: display, position, top, left, width, height
+ */
+}
+#webgazerVideoContainer {
+    display: block !important; 
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 320px !important;
+    height: 240px !important;
+    z-index: -1;
+}
+
+/* Navbar styling */
+
+
+#Accuracy a{
+   
+    color: #2F5EC4;
+    left: -15px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#Accuracy {
+
+    padding-left: inherit;
+}
+
+
+.helpBtn {
+    display: inline-block;
+    padding: 15px;
+    border: none;
+    background: none;
+    color: #777;
+}
+.helpBtn:hover {
+    color: black!important;
+    text-decoration: none;
+}
+.modal-header {
+    border-bottom: none!important;
+}
+
+/* Calibration button styling */
+.Calibration{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: red;
+    opacity: 0.2;
+    border-color: black;
+    border-style: solid;
+    position:fixed;
+}
+
+/* Calibration point position */
+#Pt1{
+    top: 40px;
+    left: 10vw;
+}
+#Pt2{
+    top: 40px;
+    left:50vw;
+}
+#Pt3{
+    top: 40px;
+    right:10vw;
+}
+#Pt4{
+    top:50vh;
+    left:10vw;
+}
+#Pt5{
+    top: 50vh;
+    left: 50vw;
+}
+#Pt6{
+    top: 50vh;
+    right:10vw;
+}
+#Pt7{
+    bottom:70px;
+    left: 10vw;
+}
+#Pt8{
+    bottom:70px;
+    left:50vw;
+}
+#Pt9{
+    bottom:70px;
+    right:10vw;
+}
+
+ .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 56px; /* Altura de la barra inferior */
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            display: flex;
+        }
+        .footer button {
+            flex: 1;
+            border: none;
+            background: none;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer button i {
+            font-size: 24px;
+        }
+        .box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #ddd;
+        }
+        .box:last-child {
+            border-right: none;
+        }
+         #container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+
+    .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+
+.quadrant {
+    position: relative;
+    width: calc(33.33% - 10px);
+    height: 25vh; /* Cambiado a 25vh para ocupar el 25% del alto de la pantalla */
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.quadrantfull {
+    width: calc(99.9% - 10px);
+    height: 25vh; /* Cambiado a 25vh para ocupar el 25% del alto de la pantalla */
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    z-index: -1;
+}
+
+
+
+.quadrant img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.quadrant .textoinquadrant {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tu preferencia */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; /* Ajusta el color del texto según tu preferencia */
+}
+        
+        
+           /* Estilos para la capa de advertencia */
+        #warningLayer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.5);
+            display: none;
+            z-index: 999;
+        }
+
+        /* Estilos para el mensaje de advertencia */
+        #warningMessage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }     
+        
+          .textquadrant {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tu preferencia */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black; /* Ajusta el color del texto según tu preferencia */
+}
+
+#conf {
+  color: #2F5EC4;
+}
